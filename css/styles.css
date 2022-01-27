@@ -4,6 +4,7 @@
   --selection-text-color: #2196f3;
   --hero-btn-color: #ffffff;
   --portfolio-btn-color: #f5f4fa;
+  /* --outlain-for-layout:tomato; */
 }
 
 * {
@@ -48,7 +49,7 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid var(--outlain-for-layout);
 }
 
 /*--------HEADER---------*/
@@ -140,7 +141,7 @@ a {
   padding-top: 200px;
   padding-bottom: 200px;
   
-  /* outline: 2px solid tomato; */
+  outline: 2px solid var(--outlain-for-layout);
 }
 
 .hero-container {
@@ -191,7 +192,7 @@ a {
   padding-top: 94px;
   padding-bottom: 94px;
   display: flex;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid var(--outlain-for-layout);
 }
 
 .about-container {
@@ -233,7 +234,7 @@ a {
 .work {
   display: flex;
   padding-bottom: 94px;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid var(--outlain-for-layout);
 }
 
 .work-header {
@@ -284,7 +285,7 @@ a {
 .team-img {
   margin-top: 50px;
   border-radius: 0px 0px 4px 4px;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid var(--outlain-for-layout);
 }
 
 .team-img + .team-img {
@@ -321,7 +322,7 @@ a {
   padding-top: 60px;
   padding-bottom: 60px;
   background: #2f303a;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid var(--outlain-for-layout);
 }
 
 
@@ -354,7 +355,7 @@ a {
 /*--------------PORTFOLIO----------------*/
 
 .product {
-  /* outline: 2px solid tomato; */
+  outline: 2px solid var(--outlain-for-layout);
 }
 
 .button-navigation {
@@ -397,7 +398,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  /* margin-bottom: -60px; */
+  /* margin-bottom: 30px; */
+  padding-bottom: 94px;
+  outline: 2px solid var(--outlain-for-layout);
+
 }
 
 

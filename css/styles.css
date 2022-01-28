@@ -77,9 +77,7 @@ a {
 .logo-studio {
   color: var(--header-text-color);
 }
-.logo-studio-footer {
-  color: #ffffff;
-}
+
 
 /*--------------header-list----------------*/
 .header-list {
@@ -124,7 +122,6 @@ a {
   letter-spacing: 0.02em;
 
   color: var(--list-text-color);
-  margin-left: 50px;
 }
 
 .header-info-adres:hover,
@@ -137,7 +134,6 @@ a {
 .hero {
   background: #2f303a;
   text-align: center;
-  display: flex;
   padding-top: 200px;
   padding-bottom: 200px;
   
@@ -191,22 +187,19 @@ a {
 .about {
   padding-top: 94px;
   padding-bottom: 94px;
-  display: flex;
   outline: 2px solid var(--outlain-for-layout);
 }
 
 .about-container {
   display: flex;
-  margin-left: - 30px;
+  /* margin-left: - 30px; */
 }
 
 .about-container-title {
-  /* width: calc(100% /4 - 30); */
-  /* margin-left: 30px; */
+  width: 270px;
 }
 
 .about-container-title + .about-container-title {
-  width: 270;
   margin-left: 30px;
 }
 
@@ -232,7 +225,6 @@ a {
 
 /*-------------------work------------------------*/
 .work {
-  display: flex;
   padding-bottom: 94px;
   outline: 2px solid var(--outlain-for-layout);
 }
@@ -243,7 +235,7 @@ a {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-
+  margin-bottom: 50px;
   color: var(--header-text-color);
 }
 
@@ -255,17 +247,14 @@ a {
   margin-left: 30px;
 }
 
-.work-img {
-  margin-top: 50px;
-}
 
 /*------------------team---------------------------*/
 
 .team {
-  display: flex;
-  /*padding-top: 94px;*/
+  padding-top: 94px;
   padding-bottom: 94px;
-  /* outline: 2px solid tomato; */
+  background-color: var(--portfolio-btn-color);
+  outline: 2px solid var(--outlain-for-layout);
 }
 
 .team-container {
@@ -278,14 +267,15 @@ a {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 
   color: var(--header-text-color);
 }
 
 .team-img {
-  margin-top: 50px;
   border-radius: 0px 0px 4px 4px;
-  outline: 2px solid var(--outlain-for-layout);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--hero-btn-color);
 }
 
 .team-img + .team-img {
@@ -294,6 +284,7 @@ a {
 
 .team-name-conteiner {
   padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
@@ -314,7 +305,6 @@ a {
 
   letter-spacing: 0.03em;
   margin-top: 10px;
-  margin-bottom: 30px;
 }
 
 /*-------------------footer-------------------------*/
@@ -325,6 +315,11 @@ a {
   outline: 2px solid var(--outlain-for-layout);
 }
 
+.logo-studio-footer {
+  display: inline-block;;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
 
 .addres {
   font-style: normal;
@@ -332,7 +327,7 @@ a {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-top: 20px;
+
 }
 
 .footer-info-adres {
@@ -343,9 +338,12 @@ a {
   color: var(--selection-text-color);
 }
 
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer-info {
   color: rgba(255, 255, 255, 0.6);
-  margin-top: 9px;
 }
 .footer-info:hover,
 .footer-info:focus {
@@ -355,13 +353,14 @@ a {
 /*--------------PORTFOLIO----------------*/
 
 .product {
+  padding-top: 94px;
+  padding-bottom: 94px;
   outline: 2px solid var(--outlain-for-layout);
 }
 
 .button-navigation {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   justify-content: center
 }
 
@@ -398,22 +397,23 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  /* margin-bottom: 30px; */
-  padding-bottom: 94px;
+  margin-top: -30px;
   outline: 2px solid var(--outlain-for-layout);
 
 }
 
 
-
 .produkt-info-bloc {
   width: calc(100% /3 -30px);
   margin-left: 30px;
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 
 .produkt-info-conteiner {
+  padding: 20px 24px 20px 24px;
+  border: 1px solid #EEEEEE;
+
 }
 
 .product-title {
@@ -423,9 +423,9 @@ a {
   /* identical to box height, or 200% */
 
   letter-spacing: 0.06em;
+  padding-bottom: 4px;
 
   color: var(--header-text-color);
-  margin-top: 20px;
 }
 
 .product-link {
@@ -437,5 +437,4 @@ a {
   letter-spacing: 0.03em;
 
   color: var(--list-text-color);
-  margin-top: 4px;
 }
